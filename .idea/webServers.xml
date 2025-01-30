@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0a2b0cb8-07ab-4473-97e0-4c519d0d4417" name="suk-thb" url="http://keto.th-brandenburg.de">
+        <fileTransfer rootFolder="/srv/www/user/suk" accessType="SFTP" host="keto.th-brandenburg.de" port="22" sshConfigId="d23ae057-f97e-4449-9d84-25abdc30a322" sshConfig="https://keto-brandenburg.de/~sukjoon/">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
