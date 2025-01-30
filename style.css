@@ -1,5 +1,5 @@
-/* === Allgemeine Reset- und Box-Sizing-Regeln === */
 /* Quelle: MDN Web Docs (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) */
+/* Quelle: Inspiriert durch Bootstrap (https://getbootstrap.com/) */
 * {
     box-sizing: border-box;
     max-width: 100%;
@@ -26,20 +26,6 @@ body, html {
 
 /* === Basis-Layout und Navigation === */
 /* Quelle: Eigene Entwicklung, inspiriert durch Bootstrap (https://getbootstrap.com/) */
-
-/* Navigation */
-.nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
-    overflow: hidden;
-}
-
-/* Logo */
 .logo-image {
     height: 50px;
     width: auto;
@@ -47,37 +33,39 @@ body, html {
     border-radius: 50%;
 }
 
-/* Navigationsliste */
-.nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Navigation */
+.nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
     gap: 1rem;
+}
+
+/* Links */
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #FDFF00;
+    border-radius: 5px;
+    color: #3AA655;
 }
 
 .nav-list li {
     color: #000;
 }
 
-/* Navigationslinks */
-.nav-link {
-    color: #fff !important;
-    text-decoration: none;
-    font-weight: 700 !important;;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-link:hover {
-    background-color: #FDFF00;
-    border-radius: 5px;
-    color: #3AA655 !important;
-}
-
-.hamburger {
-    display: none;
-}
 
 .hero {
     background: url('./images/background-1.jpg') no-repeat center center/cover;
@@ -799,37 +787,19 @@ body, html {
 
 @media (min-width: 576px) and (max-width: 768px) {
     .nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-
-    .hamburger {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    .ham-icon {
-        width: 35px;
-        height: 3px;
-        background-color: #ffffff;
-        margin: 6px 0;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-list {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #A7F432;
         flex-direction: column;
         text-align: center;
-        padding: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+
+    .nav-list li {
+        width: 100%;
+        padding: 0.5rem 0;
     }
 
     .nav-list.active {

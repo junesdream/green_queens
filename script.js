@@ -1,6 +1,5 @@
 // 1.Modal-Funktion für Rezeptanzeige (Vollbild-Popup Fenster Modal /Modal
 // Inspiration: MDN Web Docs (https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
-// Eigene Anpassung für dynamische Rezepte mit JavaScript-Objekt durch einen Unterrichtkurse
 const modal = document.getElementById('recipe-modal');
 const modalTitle = document.getElementById('modal-title');
 const modalContent = document.getElementById('modal-content');
@@ -118,73 +117,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-//Kontaktformular
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
-    const successMessage = document.getElementById('successMessage');
-    const charCount = document.getElementById('charCount');
-    const messageInput = document.getElementById('message');
-    const MAX_CHARS = 200;
-
-    // Initial den Zeichenzähler setzen
-    updateCharCount();
-
-    // Funktion zum Aktualisieren des Zeichenzählers
-    function updateCharCount() {
-        const remainingChars = MAX_CHARS - messageInput.value.length;
-        charCount.textContent = remainingChars;
-    }
-
-    // Zeichenzähler bei jeder Eingabe aktualisieren
-    messageInput.addEventListener('input', updateCharCount);
-
-    // Formularvalidierung und Absenden
-    form.addEventListener('submit', async function(event) {
-        event.preventDefault();
-
-        if (form.checkValidity()) {
-            try {
-                const response = await fetch(form.action, {
-                    method: form.method,
-                    body: new FormData(form),
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-
-                if (response.ok) {
-                    // Erfolgsmeldung anzeigen
-                    successMessage.style.display = 'block';
-
-                    // Alle Formularfelder leeren
-                    form.reset();
-
-                    // Zeichenzähler zurücksetzen
-                    updateCharCount();
-
-                    // Validierungsklasse entfernen
-                    form.classList.remove('was-validated');
-
-                    // Erfolgsmeldung nach 5 Sekunden ausblenden
-                    setTimeout(() => {
-                        successMessage.style.display = 'none';
-                    }, 5000);
-                } else {
-                    throw new Error('Server-Fehler');
-                }
-            } catch (error) {
-                alert('Es gab ein Problem beim Senden der Nachricht. Bitte versuchen Sie es später erneut.');
-            }
-        } else {
-            form.classList.add('was-validated');
-        }
-    });
-});
-//Kontaktformular
-// === Kontaktformular mit Validierung und Zeichenzähler ===
+//4. Kontaktformular (Funktionalität solltet noch verbessert werden)
 // Inspiration: MDN Web Docs (https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
-// Fetch API-Dokumentation: MDN Web Docs (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-// Eigene Anpassung für asynchrones Absenden und Zeichenzähler
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
     const successMessage = document.getElementById('successMessage');
@@ -247,25 +181,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-// Hamburger Menu
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navList = document.querySelector('.nav-list');
-
-    hamburger.addEventListener('click', () => {
-        navList.classList.toggle('active');
-    });
-});
-
-// Hamburger Menu
-// Inspiration: W3Schools Navigation Toggle (https://www.w3schools.com/howto/howto_js_mobile_navbar.asp)
-// Eigene Anpassung für CSS-Klassensteuerung
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navList = document.querySelector('.nav-list');
-
-    hamburger.addEventListener('click', () => {
-        navList.classList.toggle('active');
-    });
-});
