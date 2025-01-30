@@ -68,7 +68,8 @@ Die Plattform ist hier erreichbar:
   ![Cocos Curry](images/cocoscurry.png)
   ![Couscous Lal](images/couscouslal.png)
   ![Couscous Lal](images/avocadotoast.png)
-- **Eigene Bilder** – Frei von den Gründern
+
+- **Und eigene Bilder** – Frei von den Gründern
 
 ### 🎨 Code & Inspiration
 - **[Bootstrap](https://getbootstrap.com/)** – Framework für das Layout: Struktur & Grid-System sowie Cards & Slide
