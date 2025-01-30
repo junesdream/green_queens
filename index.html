@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vegane Austauschplattform für Rezepte, Tipps und Ideen rund um vegane Ernährung.">
+    <title>Vegane Austauschplattform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!-- Favicon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header mit Navigation -->
+<header class="header">
+    <nav class="nav">
+        <a href="#home" class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image">
+        </a>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link">Startseite</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">Über uns</a></li>
+            <li class="nav-item"><a href="#recipes" class="nav-link">Rezepte</a></li>
+            <li class="nav-item"><a href="#experiences" class="nav-link">Erfahrungen</a></li>
+            <li class="nav-item"><a href="#exchange" class="nav-link">Tauschbörse</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Kontakt</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Menü öffnen">
+            <div class="ham-icon"></div>
+            <div class="ham-icon"></div>
+            <div class="ham-icon"></div>
+        </button>
+    </nav>
+</header>
+
+<!-- Startseite (Home) -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Willkommen bei unserer Veggie Oase <br/> <span>Green Queens</span></h1>
+        <h2>– der Austauschplattform für kreative Köpfe </h2>
+        <p class="hero-text">Teile deine Lieblingsrezepte, entdecke neue Inspirationen <br/> und werde Teil unserer
+            kleinen,
+            aber herzlichen Community, <br/> die für Nachhaltigkeit, Liebe und Genuss steht.</p>
+        <a href="#recipes" class="btn">Rezepte entdecken</a>
+    </div>
+</section>
+
+<!-- Detail Sides -->
+<div class="detail-side">
+    <!-- Über uns -->
+    <section id="about" class="section">
+        <h2 class="section-title">Über uns</h2>
+        <h3>Wer wir sind</h3>
+        <p>
+            Wir sind eine kleine, engagierte Frauengruppe aus verschiedenen asiatischen Ländern, die ihre Leidenschaft
+            für pflanzliche Ernährung und nachhaltige Lebensweisen verbindet. Als Frauen, die mitten im Leben stehen,
+            haben wir erkannt, wie wichtig es ist, nicht nur für die Umwelt einzutreten, sondern auch Frauenrechte zu
+            stärken und gegenseitige Unterstützung zu fördern. Unser gemeinsames Ziel ist es, positive Veränderungen in
+            der Welt zu bewirken – für unseren Planeten und für die Frauen, die ihn bewohnen.
+        </p>
+        <!--    ## Verwendete Technologien
+            - [Bootstrap](https://getbootstrap.com/) für das Layout und die Gestaltung der Karten. -->
+        <div class="aboutBox-list">
+            <!-- Karte 1 -->
+            <div class="aboutBox">
+                <div class="card">
+                    <img src="images/founder-1.png" alt="Dyen Trần" class="aboutBox-image mx-auto mt-3">
+                    <div class="card-body text-center">
+                        <h3 class="card-title aboutBox-name">Dyen Trần</h3>
+                        <h4 class="card-text aboutBox-position">Vegga Gründerin</h4>
+                        <p class="card-text aboutBox-bio">Dyen bringt ihre Leidenschaft für Nachhaltigkeit und
+                            vegane Ernährung in unsere Plattform ein. Sie liebt es, neue Rezepte zu kreieren, die
+                            nicht nur lecker, sondern auch umweltfreundlich sind.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Karte 2 -->
+            <div class="aboutBox">
+                <div class="card">
+                    <img src="images/founder-2.png" alt="Jinjin Wang" class="aboutBox-image mx-auto mt-3">
+                    <div class="card-body text-center">
+                        <h3 class="card-title aboutBox-name">Jinjin Wang</h3>
+                        <h4 class="card-text aboutBox-position">Hofmarkt Entwicklerin</h4>
+                        <p class="card-text aboutBox-bio">Jinjin ist die kreative Seele hinter unserer Plattform.
+                            Sie kombiniert technisches Know-how mit innovativen Ideen, um vegane Produkte und Märkte
+                            sichtbarer zu machen.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Karte 3 -->
+            <div class="aboutBox">
+                <div class="card">
+                    <img src="images/founder-3.png" alt="Yuna Park" class="aboutBox-image mx-auto mt-3">
+                    <div class="card-body text-center">
+                        <h3 class="card-title aboutBox-name">Yuna Park</h3>
+                        <h4 class="card-text aboutBox-position">Marketing & Community</h4>
+                        <p class="card-text aboutBox-bio">Yuna kümmert sich leidenschaftlich um den Aufbau unserer
+                            Community. Mit ihrem Sinn für Marketing inspiriert sie Menschen, Teil unserer Bewegung
+                            für eine nachhaltige Zukunft zu werden.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Unsere Mission</h3>
+        <p>
+            Unsere Mission ist es, Menschen zu inspirieren, die Möglichkeiten und den Genuss der veganen Küche zu
+            entdecken. Dabei wollen wir nicht nur Umweltbewusstsein schaffen, sondern auch Frauen ermutigen, neue Wege
+            zu gehen, ihre Stärke zu finden und sich gegenseitig zu unterstützen. Insbesondere möchten wir Frauen im
+            mittleren Alter ansprechen, die oft inmitten von Herausforderungen stehen, und ihnen zeigen, dass
+            Veränderung, Wachstum und ein erfülltes Leben immer möglich sind.
+        </p>
+
+        <h3>Unsere Werte</h3>
+        <p>
+            Wir glauben fest daran, dass jede Entscheidung zählt. Die Wahl einer pflanzlichen Ernährung ist für uns
+            nicht nur eine Möglichkeit, unsere Umwelt zu schützen, sondern auch ein kraftvoller Akt der Solidarität mit
+            anderen Frauen und Gemeinschaften weltweit. Mit jeder veganen Mahlzeit tragen wir dazu bei, den
+            Ressourcenverbrauch zu senken, die Natur zu bewahren und ein Zeichen für Nachhaltigkeit zu setzen.
+            Gleichzeitig wollen wir durch unser Engagement ein Netzwerk aufbauen, das Frauen dabei unterstützt, ihre
+            Rechte zu stärken und sich gegenseitig zu inspirieren.
+        </p>
+        <h3>Was wir tun</h3>
+        <p>
+            Unsere Plattform ist ein Ort der Inspiration und des Austauschs. Hier findest du:
+        </p>
+        <div class="aboutBox-list">
+            <!-- Karte 1 -->
+            <div class="aboutBox">
+                <div class="card">
+                    <img src="images/do-1.png" alt="Genussrezepte" class="card-img-top do-image mx-auto mt-3">
+                    <div class="card-body text-center">
+                        <h3 class="card-title aboutBox-name">Genussrezepte</h3>
+                        <p class="card-text aboutBox-position">Köstliche vegane Rezepte, die leicht zuzubereiten
+                            sind und den Alltag bereichern</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Karte 2 -->
+            <div class="aboutBox">
+                <div class="card">
+                    <img src="images/do-2.png" alt="Nachhaltigkeitskreis"
+                         class="card-img-top do-image mx-auto mt-3">
+                    <div class="card-body text-center">
+                        <h3 class="card-title aboutBox-name">Nachhaltigkeitskreis</h3>
+                        <p class="card-text aboutBox-position">Eine zuversichtliche Community, die sich für
+                            Nachhaltigkeit und Frauenförderung einsetzt</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Karte 3 -->
+            <div class="aboutBox">
+                <div class="card">
+                    <img src="images/do-3.png" alt="Friedensgemeinschaft"
+                         class="card-img-top do-image mx-auto mt-3">
+                    <div class="card-body text-center">
+                        <h3 class="card-title aboutBox-name">Friedensgemeinschaft</h3>
+                        <p class="card-text aboutBox-position">Gemeinschaft und Zusammenhalt – für eine friedliche
+                            Welt in nachhaltigem Einklang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Unsere Vision</h3>
+        <p>
+            Unsere Vision ist es, eine Welt zu schaffen, in der Frieden, Liebe und Nachhaltigkeit Hand in Hand gehen.
+            Wir träumen von einer Gesellschaft, in der Frauen nicht nur gehört, sondern auch gestärkt werden – durch
+            Bildung, Ernährung und ein Bewusstsein für die eigene Kraft. Wir glauben daran, dass Frauen, die sich für
+            sich selbst und die Umwelt einsetzen, eine unglaubliche Kraft entfalten können, die weit über die eigene
+            Küche hinausreicht.
+        </p>
+        <h3>Unsere besondere Botschaft</h3>
+        <p>
+            Wir sind stolz darauf, eine Plattform für Frauen zu sein, die nicht nur für vegane Ernährung und
+            Nachhaltigkeit steht, sondern auch für Gemeinschaft, Solidarität und gegenseitigen Respekt. Ob du selbst
+            erfahren in der veganen Küche bist oder einfach neugierig darauf, etwas Neues auszuprobieren – bei uns bist
+            du herzlich willkommen!
+        </p>
+    </section>
+
+    <!-- Rezepte -->
+    <section id="recipes" class="section">
+        <h2 class="section-title">Rezepte</h2>
+        <p class="section-text">
+            Jeden Montag stellen wir einige monatliche Saison-Rezepte vor.
+        </p>
+
+        <!-- Rezept-Liste -->
+        <div class="recipe-list">
+            <!-- Rezept 1 -->
+            <div class="recipe">
+                <div class="card">
+                    <img src="images/reissalate.png" alt="Gemüse Misoreis" class="card-img-top recipe-image">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Gemüse Misoreis</h3>
+                        <button class="btn btn-outline-primary open-modal" data-recipe="misoreis">Rezept ansehen
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Rezept 2 -->
+            <div class="recipe">
+                <div class="card">
+                    <img src="images/cocoscurry.png" alt="Cocossoja-Curry" class="card-img-top recipe-image">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Cocossoja-Curry</h3>
+                        <button class="btn btn-outline-primary open-modal" data-recipe="cocossoja">Rezept ansehen
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Rezept 3 -->
+            <div class="recipe">
+                <div class="card">
+                    <img src="images/couscouslal.png" alt="Soja Couscous" class="card-img-top recipe-image">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Soja Couscous</h3>
+                        <button class="btn btn-outline-primary open-modal" data-recipe="couscous">Rezept ansehen
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bonus-Rezept-Teil -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="bonus-recipe" data-bs-toggle="modal" data-bs-target="#bonusRecipeModal">
+                    <h3 class="bonus-title">Bonus-Wochenrezept</h3>
+                    <p class="bonus-text">Jede Woche präsentieren wir ein exklusives Rezept, das von unseren
+                        Mitgliedern kreiert, getestet und empfohlen wird. <br/> Schau vorbei und lass dich
+                        überraschen!</p>
+                    <button type="button" class="btn btn-outline-success">Suprise!</button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="recipe-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3 id="modal-title"></h3>
+                <img id="modal-image" src="" alt="Rezept-Bild"/>
+                <p id="modal-content"></p>
+            </div>
+        </div>
+        <!-- Bootstrap-Modal für das Bonus-Rezept -->
+        <div class="modal fade" id="bonusRecipeModal" tabindex="-1" aria-labelledby="bonusRecipeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bonusRecipeModalLabel">Bonus-Wochenrezept</h5>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4>Avocado-Toast</h4>
+                        <img src="images/avocadotoast.png" alt="Avocado-Toast" class="img-fluid rounded mb-3"/>
+                        <p>Hier ist das Rezept für unseren leckeren <br/> <strong>Avocado-Toast</strong>:</p>
+                        <ul class="text-start">
+                            <li>1 Scheibe Vollkornbrot</li>
+                            <li>1 reife Avocado</li>
+                            <li>1 EL Hafermilch</li>
+                            <li>1 EL Zitronensaft</li>
+                            <li>1 Prise Salz und Pfeffer</li>
+                            <li>Optional: Chili-Flocken oder frische Kräuter</li>
+                        </ul>
+                        <div class="preparation-text">
+                            <h5>Zubereitung:</h5>
+                            <p>
+                                Brot toasten, Avocado mit einer Gabel zerdrücken und mit Hafermilch, Zitronensaft, Salz
+                                und Pfeffer abschmecken.
+                                Auf das Brot streichen und mit den gewünschten Toppings garnieren. Guten Appetit!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                        <button type="button" class="btn btn-success" id="saveRecipe">Rezept speichern</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Erfahrungen: ## Verwendete Technologien
+- [Bootstrap](https://getbootstrap.com/) für das Layout, die Gestaltung und den Carousel. -->
+    <section id="experiences" class="section">
+        <h2 class="section-title">Erfahrungen</h2>
+        <p class="section-text">Hier teilen unsere Nutzer ihre Erfahrungen mit veganer Ernährung und präsentieren
+            innovative Rezept-Ideen. <br/> Sharing is Caring!:</p>
+        <!-- Carousel Container -->
+        <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!-- Karte 1 -->
+                        <div class="col-md-4">
+                            <div class="card experience-card">
+                                <img src="images/vegetardinner.png" alt="Erfahrung 1" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Ansun Lim</h3>
+                                    <p class="card-text">"Seit ich vegan lebe, fühle ich mich energiegeladener und
+                                        gesünder!"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Karte 2 -->
+                        <div class="col-md-4">
+                            <div class="card experience-card">
+                                <img src="images/sujebi.png" alt="Erfahrung 2" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Kaiwen Pohong</h3>
+                                    <p class="card-text">"Die superfrische Haferfleckensuppe peppt mich richtig
+                                        auf!"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Karte 3 -->
+                        <div class="col-md-4">
+                            <div class="card experience-card">
+                                <img src="images/sojasquidy.png" alt="Erfahrung 3" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Narumol Cindung</h3>
+                                    <p class="card-text">"Die Community ist großartig! Die Rezepte sind und
+                                        inspirierend."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- Karte 4 -->
+                        <div class="col-md-4">
+                            <div class="card experience-card">
+                                <img src="images/bohnenzal.png" alt="Erfahrung 4" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Nattida Genritru</h3>
+                                    <p class="card-text">"Die Plattform hat mir geholfen, neue Freunde zu finden und
+                                        machen."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Karte 5 -->
+                        <div class="col-md-4">
+                            <div class="card experience-card">
+                                <img src="images/kartoffelcheese.png" alt="Erfahrung 5" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Kazuko Muyashiba</h3>
+                                    <p class="card-text">"Die Mahlzeit mit verschiedenen Naturgerichten ist wirklich
+                                        healthy costs."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Karte 6 -->
+                        <div class="col-md-4">
+                            <div class="card experience-card">
+                                <img src="images/kimchijjang.png" alt="Erfahrung 6" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Akiko Juikamo</h3>
+                                    <p class="card-text">"Nachhaltigkeit als Kreislauf: für uns und zukünftige
+                                        Generationen."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- Karte 7 -->
+                        <div class="col-md-4">
+                            <div class="card experience-card">
+                                <img src="images/kohlmade.png" alt="Erfahrung 7" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Jinkyung Chun</h3>
+                                    <p class="card-text">"Ich habe viele neue Gerichte ausprobiert – alles
+                                        köstlich!"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Karte 8 -->
+                        <div class="col-md-4">
+                            <div class="card experience-card">
+                                <img src="images/bohnenzal.png" alt="Erfahrung 8" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Arawan Doung</h3>
+                                    <p class="card-text">"Die Plattform ist eine große Inspiration für uns alle, forever
+                                        and ever."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Karte 9 -->
+                        <div class="col-md-4">
+                            <div class="card experience-card">
+                                <img src="images/strawsmoothy.png" alt="Erfahrung 9" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Hao Tao</h3>
+                                    <p class="card-text">"Ich bin stolz darauf, Teil dieser Community zu sein, bin
+                                        frisch."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Pfeile (Vor/Zurück) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Tauschbörse Tabelle: ## Verwendete Technologien
+- [Bootstrap](https://getbootstrap.com/) für das Layout, die Gestaltung und das Modal. -->
+    <section id="exchange" class="section">
+        <h2 class="section-title">Tauschbörse</h2>
+        <p class="section-text">Hier findest du Angebote zum Tauschen und Verkaufen. Klicke auf eine Zeile, um mehr
+            zu erfahren.</p>
+        <div class="-exchange-table">
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Angebot</th>
+                    <th scope="col">Beschreibung</th>
+                    <th scope="col">Aktion</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Zeile 1 -->
+                <tr>
+                    <td>Anna Müller</td>
+                    <td>Vegane Kochbücher</td>
+                    <td>3 Kochbücher für vegane Ernährung, wie neu.</td>
+                    <td>
+                        <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#exchangeModal">
+                            Details
+                        </button>
+                    </td>
+                </tr>
+                <!-- Zeile 2 -->
+                <tr>
+                    <td>Max Schmidt</td>
+                    <td>Gemüsegarten-Set</td>
+                    <td>Komplettes Set für den eigenen Gemüsegarten.</td>
+                    <td>
+                        <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#exchangeModal">
+                            Details
+                        </button>
+                    </td>
+                </tr>
+                <!-- Zeile 3 -->
+                <tr>
+                    <td>Lisa Bauer</td>
+                    <td>Vegane Snacks</td>
+                    <td>Selbstgemachte vegane Snacks, verschiedene Sorten.</td>
+                    <td>
+                        <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#exchangeModal">
+                            Details
+                        </button>
+                    </td>
+                </tr>
+                <!-- Zeile 4 -->
+                <tr>
+                    <td>Minja Go</td>
+                    <td>Hanf Pulis</td>
+                    <td>Wie mache ich das?</td>
+                    <td>
+                        <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#exchangeModal">
+                            Details
+                        </button>
+                    </td>
+                </tr>
+                <!-- Zeile 5 -->
+                <tr>
+                    <td>Pruni Yang</td>
+                    <td>After work party</td>
+                    <td>Let's do party!</td>
+                    <td>
+                        <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#exchangeModal">
+                            Details
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Modal für Tauschbörse -->
+    <div class="modal fade" id="exchangeModal" tabindex="-1" aria-labelledby="exchangeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exchangeModalLabel">Angebotsdetails</h5>
+                </div>
+                <div class="modal-body">
+                    <h4 id="modalOfferTitle"></h4>
+                    <p id="modalOfferDescription"></p>
+
+                    <!-- Kontaktformular -->
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Dein Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Deine Nachricht</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontakt: ## Verwendete Technologien
+- [Bootstrap](https://getbootstrap.com/) für das Layout, die Gestaltung und das Formular. -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Kontakt</h2>
+        <p class="section-text">Wir freuen uns auf deine Nachricht!</p>
+        <div class="row">
+            <!-- Linke Card -->
+            <div class="col-md-6">
+                <div class="contact-info-card">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Gerne hören wir von euch!</h3>
+                        <p class="card-text">Wir nehmen Kritik und Ideen an und freuen uns auf deine Nachricht.
+                            <br/>Hast du Fragen, Anregungen oder möchtest einfach Hallo sagen? Wir freuen uns
+                            darauf, von dir zu hören! Fülle einfach das Formular aus, und wir melden uns so schnell
+                            wie möglich bei dir. Egal ob Feedback, Rezeptideen oder Kooperationen – dein Anliegen
+                            ist bei uns herzlich willkommen!</p>
+                        <img src="images/contact.png" alt="Kontakt Bild" class="img-fluid mb-3">
+                        <p class="card-text">
+                            <strong>Adresse:</strong> <br/>Friedrich-Ebert-Strasse 71, 45127 Essen<br>
+                            <strong>Telefon:</strong> +49 163 45678954<br>
+                            <strong>E-Mail:</strong> info@green-queens.org
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Rechte Card (Kontaktformular) -->
+            <div class="col-md-6">
+                <div class="contact-form-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Kontaktformular</h3>
+                        <form id="contactForm" action="https://formspree.io/f/xvgzzloe" method="POST">
+                            <!-- Name -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">Bitte gib deinen Namen ein.</div>
+                            </div>
+
+                            <!-- E-Mail -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-Mail</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">Bitte gib eine gültige E-Mail-Adresse ein.</div>
+                            </div>
+
+                            <!-- Betreff -->
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Betreff</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                                <div class="invalid-feedback">Bitte gib einen Betreff ein.</div>
+                            </div>
+
+                            <!-- Nachricht -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Nachricht</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" maxlength="200"
+                                          required></textarea>
+                                <small class="form-text">Noch <span id="charCount">200</span> Zeichen übrig.</small>
+                                <div class="invalid-feedback">Bitte gib eine Nachricht ein (max. 200 Zeichen).</div>
+                            </div>
+                            <!-- Senden-Button -->
+                            <button type="submit" class="btn btn-primary">Senden</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p class="footer-text">&copy; 2025 Green Queens. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
